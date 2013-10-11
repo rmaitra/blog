@@ -1,0 +1,9 @@
+<% @posts.each do |post| %>
+  <div class = "article">
+      <div class = 'article_title'><%= post.title %></div>
+      <div class = 'article_date'><%= post.created_at.to_s[0,19] %></div>
+      <div class = 'article_content'><%= post.content %></div>
+  </div>
+  </br>
+  </br>
+<% end %>

@@ -1,0 +1,100 @@
+// Place all the styles related to the StaticPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body{
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden;
+    font-family:'Gotham SSm',Helvetica,Arial,sans-serif;
+}
+
+#container{
+    width:700px;
+    position: relative;
+    top:30px;
+    left:300px;
+    background-color:#fff;
+    z-index:50;
+}
+
+// header ####################################
+#header{
+    position:fixed;
+    width:100%;
+    height:20px;
+    padding:20px;
+    background: #fff;
+    z-index:-1;
+}
+    #title {
+        margin: 0 auto;
+        font-size:90px;
+        color:#bbb;
+    }
+// Navigation ##################################
+#navigation {
+    position:fixed;
+    top:50px;
+    background-color:#BBB;
+}
+
+#navigation li {
+    display:table;
+    cursor:pointer;
+    padding:25px;
+    font-size:15px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    font-family:'Gotham SSm',Helvetica,Arial,sans-serif;  
+}
+
+#navigation li:hover{
+    color:#fff;
+    background-color:#000;
+}
+
+// Articles ################################
+.article_profile{
+    position:absolute;
+    top:50px;
+    width:700px;
+    padding:20px;
+    box-shadow: 5px 10px 10px #bbb;
+    z-index:1;
+}
+    .article_profile img{
+        float:left;
+    }
+.article{
+    width:700px;
+    padding:20px;
+    box-shadow: 5px 10px 10px #bbb;
+    z-index:1;
+}
+    .article_title{
+        font-size:30px;
+    }
+    .article_date{
+        color:#aaa;
+    }
+
+
+// Footer ######################################
+#footer {
+    position:fixed;
+    bottom:10px;
+    width:100%;
+    background: #222;
+    font-size:10px;
+    box-shadow: 0px 10px 5px #000;
+    color:#fff;
+    padding-left:50px;
+    padding-right:20px;
+    opacity:0.6;
+    filter:alpha(opacity=60);
+    z-index:60;
+}
+//################################################
