@@ -6,34 +6,25 @@
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
   <script type="text/javascript"src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-				<script type="text/x-mathjax-config">
-					MathJax.Hub.Config({
-					 tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
-					});
-				</script>
+    <script type="text/x-mathjax-config">
+	    MathJax.Hub.Config({
+	     tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+	    });
+    </script>
 </head>
 <body>
 
 <div id = 'header'>
-    <div id = 'title'>@raj.devine.maitra</div>
+    <!--<div id = 'title'>@<b>raj</b>.<i>devine</i>.maitra</div>-->
+    <%= image_tag("logo.png", width: '1500')%>
 </div>
-
-<span id = 'navigation'> 
-    <ul>
-        <li> <%= link_to 'home', :root %> </li>
-        <li> <%= link_to 'blog', {:controller => 'static_pages', :action => 'blog'} %> </li>
-        <li> <%= link_to 'portfolio', {:controller => 'static_pages', :action => 'portfolio'} %> </li>
-        <li> <%= link_to 'notes', {:controller => 'static_pages', :action => 'notes'} %> </li>
-        <li> <%= link_to 'contact', {:controller => 'static_pages', :action => 'contact'} %> </li>
-    </ul>
-</span>
 
 <div id = 'container'>
     <%= yield %>
 </div>
 
 <div id = 'footer'>
-    <p> Powered by Rails. Developed my R.Maitra.</p>
+    <p> Powered by Rails. Developed by R.Maitra.</p>
 </div>
 
 </body>

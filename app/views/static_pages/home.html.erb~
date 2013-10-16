@@ -1,6 +1,19 @@
-<div class = 'article'>
+<!--<div class = 'article_profile'>
     <%= image_tag("RajMaitra.jpg", width: '200') %> My name is Raj Devine Maitra. I am a Minnesotan that lives in San Francisco. This site contains my work during my graduate education at University of California Santa Cruz, my music, interests and contact information. Thanks for checking it out.
-</div>
+    <div class = 'article_web_piece'>
+        20sTimes
+    </div>
+</div>-->    
+    <span id = 'navigation'> 
+        <ul>
+            <li> <%= link_to '.blog', {:controller => 'static_pages', :action => 'blog'} %> </li>
+            <li> <%= link_to '.portfolio', {:controller => 'static_pages', :action => 'portfolio'} %> </li>
+            <li> <%= link_to '.notes', {:controller => 'static_pages', :action => 'notes'} %> </li>
+            <li> <%= link_to '.contact', {:controller => 'static_pages', :action => 'contact'} %> </li>
+        </ul>
+    </span>
+    <%= image_tag("logo.png", width: '600')%>
+
 
 
 

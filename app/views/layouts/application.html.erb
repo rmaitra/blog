@@ -15,25 +15,16 @@
 <body>
 
 <div id = 'header'>
-    <div id = 'title'>@raj.devine.maitra</div>
+    <!--<div id = 'title'>@<b>raj</b>.<i>devine</i>.maitra</div>-->
+    <%= image_tag("logo.png", width: '150')%>
 </div>
-
-<span id = 'navigation'> 
-    <ul>
-        <li> <%= link_to 'home', :root %> </li>
-        <li> <%= link_to 'blog', {:controller => 'static_pages', :action => 'blog'} %> </li>
-        <li> <%= link_to 'portfolio', {:controller => 'static_pages', :action => 'portfolio'} %> </li>
-        <li> <%= link_to 'notes', {:controller => 'static_pages', :action => 'notes'} %> </li>
-        <li> <%= link_to 'contact', {:controller => 'static_pages', :action => 'contact'} %> </li>
-    </ul>
-</span>
 
 <div id = 'container'>
     <%= yield %>
 </div>
 
 <div id = 'footer'>
-    <p> Powered by Rails. Developed my R.Maitra.</p>
+    <p> Powered by Rails. Developed by R.Maitra.</p>
 </div>
 
 </body>
