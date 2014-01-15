@@ -3,6 +3,8 @@
 </div>  
 
 <div class = 'container'>
+    div class = 'row'>
+        <div class="col-md-9 col-md-offset-2">
 <% @posts.each do |post| %>
     <div class = 'jumbotron'>
         <h1><%= post.title %></h1>
@@ -10,4 +12,6 @@
         <p><%= post.content.html_safe %></p>  
     </div>
 <% end %>
+    </div>
+    </div>
 </div>
