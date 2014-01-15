@@ -25,6 +25,10 @@ body{
 .jumbotron{
     color:white;
     background:#333;
+    
+    h1{
+        font-family: 'Gochi Hand', cursive;
+    }
 }
 
 
