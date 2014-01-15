@@ -14,19 +14,26 @@ body{
     position:absolute;
     width: 100%;
     top:50px;
-    background: url("http://img0.etsystatic.com/011/0/6458254/il_fullxfull.419267460_cobl.jpg%3Fref%3Dl2");
+    background: #000;
     
     h1{
-        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Permanent Marker', cursive;
         color: white; 
      }
 }
 
+.jumbotron{
+    color:white;
+    background:#333;
+}
+
+
 #nav{
-    background:#ccc;
-    
+    background:#000;
+    border-style:none;
     a{
-        color:black;
+        font-family: 'Gochi Hand', cursive;
+        color:white;
         -webkit-text-shadow: none;
         text-shadow: none;
      }

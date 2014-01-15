@@ -11,7 +11,8 @@
 	     tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
 	    });
     </script>
-    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Stardos+Stencil' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
@@ -29,16 +30,13 @@
   <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-            <li> <%= link_to 'Blog', {:controller => 'static_pages', :action => 'blog'} %> </li>
-            <li> <%= link_to 'Portfolio', {:controller => 'static_pages', :action => 'portfolio'} %> </li>
-            <li> <%= link_to 'Notes', {:controller => 'static_pages', :action => 'notes'} %> </li>
-            <li> <%= link_to 'Contact', {:controller => 'static_pages', :action => 'contact'} %> </li>
+            <li> <%= link_to 'Blog', blog_path %> </li>
+            <li> <%= link_to 'Portfolio', portfolio_path %> </li>
+            <li> <%= link_to 'Notes', notes_path %> </li>
+            <li> <%= link_to 'Contact', contact_path %> </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
             <li><a href="#">Login</a></li>
-            <li></li>
-            <li></li>
-            <li></li>
         </ul>
     </div>
 </nav>
