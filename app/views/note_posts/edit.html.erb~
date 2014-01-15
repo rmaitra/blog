@@ -1,0 +1,6 @@
+<h1>Editing note_post</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', @note_post %> |
+<%= link_to 'Back', note_posts_path %>

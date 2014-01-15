@@ -1,0 +1,15 @@
+<div class = "jumbotron" id = "home">
+    <h1>Admin</h1>
+</div>  
+
+<div class = 'container'>
+    <div class = 'jumbotron'>
+        <h1><%= link_to 'Blog', portfolio_posts_path %></h1>  
+    </div>
+    <div class = 'jumbotron'>
+        <h1><%= link_to 'Portfolio', blog_posts_path %></h1>
+    </div>
+    <div class = 'jumbotron'>
+        <h1><%= link_to 'Notes', note_posts_path %></h1>  
+    </div>
+</div>

@@ -10,5 +10,3 @@
         <%= render 'form' %>
 
         <%= link_to 'Back', blog_posts_path %>
-    </div>
-</div>
