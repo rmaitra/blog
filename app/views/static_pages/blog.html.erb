@@ -1,9 +1,13 @@
+<div class = "jumbotron" id = "home">
+    <h1>Blog</h1>
+</div>  
+
+<div class = 'container'>
 <% @posts.each do |post| %>
-  <div class = "article">
-      <div class = 'article_title'><%= post.title %></div>
-      <div class = 'article_date'><%= post.created_at.to_s[0,19] %></div>
-      <div class = 'article_content'><%= post.content.html_safe %></div>
-  </div>
-  </br>
-  </br>
+    <div class = 'jumbotron'>
+        <h1><%= post.title %></h1>
+        <p><%= post.created_at.to_s[0,19] %></p>
+        <p><%= post.content.html_safe %></p>  
+    </div>
 <% end %>
+</div>

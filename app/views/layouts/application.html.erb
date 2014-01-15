@@ -11,21 +11,37 @@
 	     tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
 	    });
     </script>
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
-<div id = 'header'>
-    <!--<div id = 'title'>@<b>raj</b>.<i>devine</i>.maitra</div>-->
-    <%= image_tag("logo.png", width: '150')%>
-</div>
+<nav class="navbar navbar-default navbar-fixed-top"  id = "nav" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <%= link_to 'TheRaj', :root, {:class => 'navbar-brand'} %>
+  </div>
+  <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            <li> <%= link_to 'Blog', {:controller => 'static_pages', :action => 'blog'} %> </li>
+            <li> <%= link_to 'Portfolio', {:controller => 'static_pages', :action => 'portfolio'} %> </li>
+            <li> <%= link_to 'Notes', {:controller => 'static_pages', :action => 'notes'} %> </li>
+            <li> <%= link_to 'Contact', {:controller => 'static_pages', :action => 'contact'} %> </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Login</a></li>
+        </ul>
+    </div>
+</nav>
 
-<div id = 'container'>
-    <%= yield %>
-</div>
+<%= yield %>
 
-<div id = 'footer'>
-    <p> Powered by Rails. Developed by R.Maitra.</p>
-</div>
-
+<%= javascript_include_tag "bootstrap.min.js" %>
 </body>
 </html>
