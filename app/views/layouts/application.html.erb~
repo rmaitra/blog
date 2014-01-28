@@ -12,7 +12,8 @@
 	    });
     </script>
     <link href='https://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Stardos+Stencil' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Gochi+Hand' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css" />
 </head>
 <body>
 
@@ -30,6 +31,7 @@
   <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
+            <li> <%= link_to 'About', about_path %> </li>
             <li> <%= link_to 'Blog', blog_path %> </li>
             <li> <%= link_to 'Portfolio', portfolio_path %> </li>
             <li> <%= link_to 'Notes', notes_path %> </li>
@@ -44,5 +46,14 @@
 <%= yield %>
 
 <%= javascript_include_tag "bootstrap.min.js" %>
+<script type="text/javascript" src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
+<script type="text/javascript">
+(function(jQuery){
+jQuery( document ).ready( function() {
+prettyPrint();
+} );
+ 
+}(jQuery))
+</script>
 </body>
 </html>

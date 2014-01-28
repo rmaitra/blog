@@ -1,4 +1,6 @@
 Therajm::Application.routes.draw do
+  resources :about_posts
+
   resources :portfolio_posts
   resources :note_posts
   resources :blog_posts
@@ -8,6 +10,7 @@ Therajm::Application.routes.draw do
   get "static_pages/portfolio"
   get "static_pages/notes"
   get "static_pages/contact"
+  get "static_pages/about"
   get "static_pages/admin"
   
   match '/home',  to: 'static_pages#home',            via: 'get'
@@ -15,6 +18,7 @@ Therajm::Application.routes.draw do
   match '/blog',  to: 'static_pages#blog',            via: 'get'
   match '/portfolio',  to: 'static_pages#portfolio',            via: 'get'
   match '/notes',  to: 'static_pages#notes',            via: 'get'
+  match '/about',  to: 'static_pages#about',            via: 'get'
   match '/admin',  to: 'static_pages#admin',            via: 'get'
   
   

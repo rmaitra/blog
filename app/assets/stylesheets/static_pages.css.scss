@@ -7,9 +7,17 @@ body{
     padding: 0 !important;
     overflow-x: hidden;
     font-family:'Gotham SSm',Helvetica,Arial,sans-serif;
-    background: url("");
 }
 
+#bg{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:50px;
+    background: url("http://amyontheprairie.files.wordpress.com/2011/03/minneapolis_on_mississippi_river.jpg");
+    background-size: 100%;
+    z-index:-50;
+}
 
 #home{
     position:absolute;
@@ -18,7 +26,7 @@ body{
     background: #000;
     
     h1{
-        font-family: 'Permanent Marker', cursive;
+        font-family: 'Gochi Hand', cursive;
         color: white; 
      }
     
@@ -46,6 +54,19 @@ body{
     }
 }
 
+#codeName{
+    color:white;
+    font-family: 'Gochi Hand', cursive;
+    background:#000;
+    opacity:0.8;
+    filter:alpha(opacity=80);
+    padding:5px;
+}
+
+#code{
+    opacity:0.8;
+    filter:alpha(opacity=80); /* For IE8 and earlier */
+}
 
 #nav{
     background:#000;
