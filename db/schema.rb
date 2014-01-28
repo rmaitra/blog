@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140128202329) do
+ActiveRecord::Schema.define(version: 20140128224132) do
 
   create_table "about_posts", force: true do |t|
     t.string   "title"
@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 20140128202329) do
 
   create_table "blog_posts", force: true do |t|
     t.string   "title"
-    t.string   "content"
+    t.text     "content",    limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
   end
