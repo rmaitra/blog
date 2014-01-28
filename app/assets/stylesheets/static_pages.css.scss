@@ -7,17 +7,9 @@ body{
     padding: 0 !important;
     overflow-x: hidden;
     font-family:'Gotham SSm',Helvetica,Arial,sans-serif;
+    background:#fff;
 }
 
-#bg{
-    position:fixed;
-    width:100%;
-    height:100%;
-    top:50px;
-    background: url("http://amyontheprairie.files.wordpress.com/2011/03/minneapolis_on_mississippi_river.jpg");
-    background-size: 100%;
-    z-index:-50;
-}
 
 #home{
     position:absolute;
@@ -61,11 +53,14 @@ body{
     opacity:0.8;
     filter:alpha(opacity=80);
     padding:5px;
+    box-shadow: 5px 10px 15px #000;
 }
 
 #code{
     opacity:0.8;
     filter:alpha(opacity=80); /* For IE8 and earlier */
+    box-shadow: 5px 10px 15px #000;
+    padding:5px;
 }
 
 #nav{

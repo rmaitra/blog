@@ -1,12 +1,12 @@
 <div class = "jumbotron" id = "home">
-    <h1> "Web. Music. Chemistry. Duh." - Raj Maitra</h1>
+    <h1> "Code, code, code..." - Raj Maitra</h1>
 </div>  
 
 <div class = 'container'>
-    <div class = 'row'  id = "code">
+    <div class = 'row'  >
         <div class = 'col-md-4'>
             <h1 id = "codeName">Linux</h1>
-            <pre class="prettyprint">
+            <pre class="prettyprint" id = "code">
 #!/bin/bash
  
 # Fibonacci numbers
@@ -28,7 +28,7 @@ fib | head -10 | tail -1
         </div>
         <div class = 'col-md-4'>
             <h1 id = "codeName">MATLAB</h1>
-            <pre class="prettyprint">
+            <pre class="prettyprint" id = "code">
 [X,Y] = meshgrid(-10:0.25:10,-10:0.25:10);
 f = sinc(sqrt((X/pi).^2+(Y/pi).^2));
 mesh(X,Y,f);
@@ -41,7 +41,7 @@ hidden off
         </div>
         <div class = 'col-md-4'>
             <h1 id = "codeName">Rails</h1>
-            <pre class="prettyprint">
+            <pre class="prettyprint" id = "code">
 def index
     @about_posts = AboutPost.all
 end
