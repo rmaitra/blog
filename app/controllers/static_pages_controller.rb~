@@ -10,6 +10,9 @@ class StaticPagesController < ApplicationController
   def notes
     @posts = NotePost.all
   end
+  def about
+    @posts = AboutPost.all
+  end
   def contact
   end
 end

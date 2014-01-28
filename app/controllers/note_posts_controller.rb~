@@ -1,6 +1,5 @@
 class NotePostsController < ApplicationController
   before_action :set_note_post, only: [:show, :edit, :update, :destroy]
-  before_filter :authenticate
 
   # GET /note_posts
   # GET /note_posts.json

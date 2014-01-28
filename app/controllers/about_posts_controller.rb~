@@ -1,6 +1,5 @@
 class AboutPostsController < ApplicationController
   before_action :set_about_post, only: [:show, :edit, :update, :destroy]
-  before_filter :authenticate
 
   # GET /about_posts
   # GET /about_posts.json

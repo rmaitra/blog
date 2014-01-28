@@ -1,6 +1,6 @@
 class PortfolioPostsController < ApplicationController
   before_action :set_portfolio_post, only: [:show, :edit, :update, :destroy]
-  before_filter :authenticate
+
   # GET /portfolio_posts
   # GET /portfolio_posts.json
   def index
