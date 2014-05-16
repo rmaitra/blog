@@ -3,21 +3,24 @@
 <head>
   <title>JAR</title>
   
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-  <script type="text/javascript"src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+    <script type="text/javascript"src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/x-mathjax-config">
-	    MathJax.Hub.Config({
-	     tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+	   $(function(){ 
+                MathJax.Hub.Config({
+                    tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+                });
 	    });
     </script>
     <link href='https://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Gochi+Hand' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css" />
+    <link href='http://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
+    <!--<link rel="stylesheet" type="text/css" href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css" />-->
     
      <script>
         $(document).on('page:load', function() {
@@ -48,7 +51,7 @@
 <body>
 <div class = "container">
 <div class = "row">
-    <span id = "logo1">...Her mind now corrupt with the ill C-Cups, Shit, I'm on my J.O. (come on) Bullshitting, hoping that the day go slow...</span>
+    <span id = "logo1">...ATCGATCGATCTGGGATCGTAGGCTTATCGTAGGCTTATAGGCTTAGGCT...</span>
 </div>
 </div>
  
@@ -90,14 +93,5 @@
 
 
 <%= javascript_include_tag "bootstrap.min.js" %>
-<script type="text/javascript" src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
-<script type="text/javascript">
-(function(jQuery){
-jQuery( document ).ready( function() {
-prettyPrint();
-} );
- 
-}(jQuery))
-</script>
 </body>
 </html>

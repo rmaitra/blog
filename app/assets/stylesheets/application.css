@@ -33,25 +33,28 @@ h1{
     border-bottom:1px solid #BBDAF9;
 }
 
+#welcome{
+    font-family: 'VT323';
+    font-size:50px;
+}
+
 #logo1{
     padding:20px;
     font-size:50px;
     opacity:0.2;
+    font-family: 'VT323';
 }
 
-#logo, #logo1{
+#logo{
     font-family: 'Gochi Hand', cursive;
     color: white;
 } 
 
-#codeName{
-    color:white;
-    font-family: 'Gochi Hand', cursive;
-}
-
 #code{
     padding:5px;
-    background-color:;
+    background-color:transparent;
+    border: none !important;
+    color:white;
 }
 
 a{
@@ -67,22 +70,4 @@ a:hover{
     top: 80px;
     background: none repeat scroll 0 0 rgba(31, 70, 108, 0.5);
     border-bottom: 1px solid rgba(31, 70, 108, 0.3);
-}
-    
-.article_profile img{
-    float:left;
-}
-
-.article_web_piece{
-    width:233px;
-    color:#333;
-    font-size:80px;        
-}
-
-.article_title{
-    font-size:30px;
-    font-weight:bold;
-}
-.article_date{
-    color:#aaa;
 }
