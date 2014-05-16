@@ -15,7 +15,7 @@ body{
     position:absolute;
     width: 100%;
     top:50px;
-    background: #000;
+    background: #777;
     
     h1{
         font-family: 'Gochi Hand', cursive;

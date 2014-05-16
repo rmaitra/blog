@@ -1,29 +1,39 @@
-<h1>Listing about_posts</h1>
+<div class = "row">
+    <h1>Editing About Posts</h1>
+</div>  
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Content</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
+<div class = 'container'>
+        <div class = 'row'>
+        <div class="col-md-9 col-md-offset-2">
+            <h1>About Admin</h1>
 
-  <tbody>
-    <% @about_posts.each do |about_post| %>
-      <tr>
-        <td><%= about_post.title %></td>
-        <td><%= about_post.content %></td>
-        <td><%= link_to 'Show', about_post %></td>
-        <td><%= link_to 'Edit', edit_about_post_path(about_post) %></td>
-        <td><%= link_to 'Destroy', about_post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+            <table>
+              <thead>
+                <tr>
+                  <th>Title</th>
+                  <th>Content</th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+              </thead>
 
-<br>
+              <tbody>
+                <% @about_posts.each do |about_post| %>
+                  <tr>
+                    <td><%= about_post.title %></td>
+                    <td><%= about_post.content %></td>
+                    <td><%= link_to 'Show', about_post %></td>
+                    <td><%= link_to 'Edit', edit_about_post_path(about_post) %></td>
+                    <td><%= link_to 'Destroy', about_post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                  </tr>
+                <% end %>
+              </tbody>
+            </table>
 
-<%= link_to 'New About post', new_about_post_path %>
+            <br>
+
+            <%= link_to 'New About post', new_about_post_path %>
+         </div>
+         </div>
+</div>

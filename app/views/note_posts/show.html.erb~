@@ -1,9 +1,9 @@
-<div class = "jumbotron" id = "home">
+<div class = "row" id = "home">
     <h1>Note Post</h1>
 </div>  
 
 <div class = 'container'>
-    <div class = 'jumbotron'>
+    <div class = 'row'>
 
 
         <p id="notice"><%= notice %></p>
@@ -20,3 +20,6 @@
 
         <%= link_to 'Edit', edit_note_post_path(@note_post) %> |
         <%= link_to 'Back', note_posts_path %>
+        
+     </div>
+</div>

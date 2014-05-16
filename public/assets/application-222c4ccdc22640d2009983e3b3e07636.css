@@ -8,9 +8,10 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
- *= require_self
- *= require_tree .
+
+
  */
+
 
 body{
     font-family:'Gotham SSm',Helvetica,Arial,sans-serif;
@@ -30,7 +31,7 @@ h1{
 }
 
 .row h1{
-    border-bottom:1px solid #fff;
+    border-bottom:1px solid #BBDAF9;
 }
 
 #logo1{

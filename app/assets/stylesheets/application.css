@@ -12,3 +12,77 @@
  *= require_tree .
  */
 
+body{
+    font-family:'Gotham SSm',Helvetica,Arial,sans-serif;
+    background-color: #10253C;
+    background-image: url("https://dsdgxy29r26xr.cloudfront.net/assets/bg-685cab2f19fd14f5f5e6483682b7733f.png");
+    background-repeat: repeat-x;
+    color: #BBDAF9;
+}
+    
+h1{
+    color: white; 
+    font-size:15px !important;
+}
+
+.row{
+    color: #BBDAF9;
+}
+
+.row h1{
+    border-bottom:1px solid #BBDAF9;
+}
+
+#logo1{
+    padding:20px;
+    font-size:50px;
+    opacity:0.2;
+}
+
+#logo, #logo1{
+    font-family: 'Gochi Hand', cursive;
+    color: white;
+} 
+
+#codeName{
+    color:white;
+    font-family: 'Gochi Hand', cursive;
+}
+
+#code{
+    padding:5px;
+    background-color:;
+}
+
+a{
+    color:#428BCA !important;
+}
+
+a:hover{
+    color:white !important;
+}
+
+#navbar{
+    position: absolute;
+    top: 80px;
+    background: none repeat scroll 0 0 rgba(31, 70, 108, 0.5);
+    border-bottom: 1px solid rgba(31, 70, 108, 0.3);
+}
+    
+.article_profile img{
+    float:left;
+}
+
+.article_web_piece{
+    width:233px;
+    color:#333;
+    font-size:80px;        
+}
+
+.article_title{
+    font-size:30px;
+    font-weight:bold;
+}
+.article_date{
+    color:#aaa;
+}

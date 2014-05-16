@@ -1,9 +1,9 @@
-<div class = "jumbotron" id = "home">
-    <h1>Editing Portfolio</h1>
+<div class = "row" id = "home">
+    <h1>New Note Post</h1>
 </div>  
 
 <div class = 'container'>
-    <div class = 'jumbotron'>
+    <div class = 'row'>
 
         <h1>New note_post</h1>
 
