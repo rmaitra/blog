@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Therajm::Application.config.secret_key_base = 'd5fef8dc1eea05dbc0178a7cfef33f892b187d4aad8991ae2d473ae660168f43c93afd20001f47d80703079b07dccd7ebffd52f4cc6a0e26ffda91714273ba6f'
+Rails.application.config.secret_key_base = 'd5fef8dc1eea05dbc0178a7cfef33f892b187d4aad8991ae2d473ae660168f43c93afd20001f47d80703079b07dccd7ebffd52f4cc6a0e26ffda91714273ba6f'

@@ -1,0 +1,20 @@
+<div class="container">
+	<div class="row">
+        <div class="col-md-10">
+            <div>
+                {{format_date(selected_post.created_at)}}
+                <h1>{{selected_post.title}}</h1>
+                <hr>
+                <div btf-markdown="selected_post.content">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <ul class="nav nav-pills nav-stacked">
+                <li class="clickable" ng-repeat="post in posts" ng-click="select_post(post)">
+                    <a>{{post.title}}</a>
+                </li>
+            </ul>
+        </div>
+	</div>
+</div>

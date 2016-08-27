@@ -1,97 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>JAR</title>
-  
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-    <%= csrf_meta_tags %>
-    <script type="text/javascript"src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">
-	   $(function(){ 
-                MathJax.Hub.Config({
-                    tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
-                });
-	    });
-    </script>
-    <link href='https://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Gochi+Hand' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
-    <!--<link rel="stylesheet" type="text/css" href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css" />-->
-    
-     <script>
-        $(document).on('page:load', function() {
-        return $('[ng-app]').each(function() {
-            var module;
-            module = $(this).attr('ng-app');
-            return angular.bootstrap(this, [module]);
-        });
-        });
-        
-        $(function(){    // this is the shorthand for document.ready
-            $(document).scroll(function(){    // this is the scroll event for the document
+  <title>rmaitra</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet"> 
 
-                scrolltop = $(document).scrollTop(); // by this we get the value of the scrolltop ie how much scroll has been don by user
-                if(parseInt(scrolltop) >= 80)    // check if the scroll value is equal to the top of navigation
-                { 
-                    $("#navbar").css({"position":"fixed","top":"0"});   // is yes then make the position fixed to top 0
-                }
-                else
-                {
-                $("#navbar").css({"position":"absolute","top":"80px"}); // if no then make the position to absolute and set it to 80
-                }
-            })
-        });
-    </script>
-    
 </head>
-<body>
-<div class = "container">
-<div class = "row">
-    <span id = "logo1">...ATCGATCGATCTGGGATCGTAGGCTTATCGTAGGCTTATAGGCTTAGGCT...</span>
-</div>
-</div>
- 
-<nav class="navbar navbar-default navbar-fixed-top navbar-inverse"  id = "navbar" role="navigation">
-   <div class = "container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        </button>
-        <span id = "logo"> <%= link_to 'TheRaj', :root, {:class => 'navbar-brand'} %></span>
-    </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li> <%= link_to 'About', about_path %> </li>
-                <li> <%= link_to 'Blog', blog_path %> </li>
-                <li> <%= link_to 'Portfolio', portfolio_path %> </li>
-                <li> <%= link_to 'Notes', notes_path %> </li>
-                <li> <%= link_to 'Contact', contact_path %> </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li> <%= link_to 'Admin', admin_path %></li>
-                <li></li>
-            </ul>
+<body ng-app="app">
+
+<div ng-controller="IndexCtrl" >
+    <nav class="navbar container">
+      <div>
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <a class="navbar-brand fontg1 font1" href="/"><b>the raj</b></a>
+          <ul class="nav navbar-nav phone pull-right">
+            <li>
+            </li>
+          </ul>
         </div>
-    </div>
-</nav>
 
-</br>
-</br>
-</br>
-<div class = "container">
-<%= yield %>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right desktop" style="padding-right:50px">
+            <li>
+                <a class="clickable" ng-click="go_profile()"><span class="glyphicon glyphicon-user"></span></a>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+         
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div>
+      <%= yield %>
+    </div>
+
 </div>
 
-
-<%= javascript_include_tag "bootstrap.min.js" %>
 </body>
 </html>
+
