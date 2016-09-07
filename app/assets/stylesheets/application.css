@@ -45,10 +45,6 @@ input{
   cursor:pointer;
 }
 
-.container {
-    width: 1300px !important;
-}
-
 
 /* phone size */
 @media (max-width: 480px) { 
