@@ -6,6 +6,8 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet"> 
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
 
 </head>
 <body ng-app="app">
@@ -35,6 +37,13 @@
     </nav>
 
     <div>
+      <div class="container" data-ng-show="show_success" data-ng-animate="'fade'">
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="alert alert-success"><span class="glyphicon glyphicon-ok"></span></div>
+              </div>
+          </div>
+      </div>
       <%= yield %>
     </div>
 

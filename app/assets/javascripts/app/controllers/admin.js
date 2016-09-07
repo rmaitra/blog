@@ -10,15 +10,16 @@ angular.module('app')
         $scope.update_post = function(post){
             if(typeof post.id == "undefined"){
                 Post.create({post:post}).then(
-                    function(post){
-                        console.log('success')
+                    function(result){
+                        post.id = result.id;
+                        $scope.success_alert();
                     }, function(response){
                         console.log(response)
                     })
             } else if(typeof post.id != "undefined"){
                 Post.update(post.id, {post:post}).then(
                     function(post){
-                        console.log('success')
+                        $scope.success_alert();
                     }, function(response){
                         console.log(response)
                     })
@@ -28,6 +29,19 @@ angular.module('app')
         $scope.select = function(post){
             post.tab = "preview";
             $scope.selected_post = post;
+        }
+
+        $scope.delete_post = function(post){
+            var response = confirm("Are you sure you want to delete " + post.title);
+            if(!response){
+                return
+            }
+            Post.delete(post).then(
+                function(post){
+                    $scope.get_posts()
+                }, function(response){
+                    console.log(response)
+                })
         }
 
         $scope.add_post = function(){

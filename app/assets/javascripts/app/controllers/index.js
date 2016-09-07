@@ -1,5 +1,5 @@
 angular.module('app')
-    .controller('IndexCtrl', ['$scope', '$location', 'Session', function($scope, $location, Session) {
+    .controller('IndexCtrl', ['$scope', '$location', 'Session', '$timeout', function($scope, $location, Session, $timeout) {
         $scope.current_user = null
         $scope.get_session = function(){
             Session.get().then(function(response){
@@ -33,6 +33,12 @@ angular.module('app')
             return moment(format_date).format('MMMM Do YYYY'); 
         }
 
+        $scope.success_alert = function(){
+            $scope.show_success = true;
+            $timeout(function(){
+                $scope.show_success = false;
+            }, 1000)
+        }
     	
     }]);
 

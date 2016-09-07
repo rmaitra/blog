@@ -33,9 +33,9 @@
             <br><br>
             <button class="btn btn-success" ng-click="update_post(selected_post)">Update</button>
             <br><br>
-            <ul class="nav nav-pills nav-stacked">
-                <li class="clickable" ng-click="select(post)" ng-repeat="post in posts" >
-                    <a>{{post.title}}</a>
+            <ul class="nav nav-stacked nav-pills">
+                <li class="clickable" ng-repeat="post in posts">
+                    <a ng-click="select(post)">{{post.title}} <span ng-click="delete_post(post)" class="glyphicon glyphicon-remove pull-right"></span></a>
                 </li>
             </ul>   
         </div>
