@@ -7,3 +7,8 @@ angular.module('app')
     return  create_basic_services('/api/v1/sessions/', $http, $q);
 }]);
 
+angular.module('app')
+    .factory('Type', ['$http', '$q', function($http, $q) {
+    return  create_basic_services('/api/v1/types/', $http, $q);
+}]);
+

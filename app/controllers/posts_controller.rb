@@ -4,13 +4,15 @@ class PostsController < ApplicationController
   # GET /blog_posts
   # GET /blog_posts.json
   def index
-    @objects = Post.all
+    @objects = Post.order("created_at DESC").all
     render json: @objects 
   end
 
   # GET /blog_posts/1
   # GET /blog_posts/1.json
   def show
+    @object = Post.find(params[:id])
+    render json: @object
   end
 
   # POST /blog_posts
@@ -41,6 +43,6 @@ class PostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.require(:post).permit(:title, :content)
+      params.require(:post).permit(:title, :content, :type_id, :sub_type_id)
     end
 end

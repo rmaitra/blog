@@ -16,5 +16,9 @@ angular
                 templateUrl: 'admin.html',
                 controller:'AdminCtrl'
             })
+            .when('/posts/', {
+                templateUrl: 'post.html',
+                controller:'PostCtrl'
+            })
         $locationProvider.html5Mode(true);
     }]);

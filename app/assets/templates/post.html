@@ -1,9 +1,13 @@
 <div class="container">
-	<div class="row">
+    <div class="row">
         <div class="col-md-10">
             <div>
-                {{format_date(selected_post.created_at)}}
+                <div>
+                    {{selected_post.type}}
+                    <b>{{selected_post.sub_type}}</b>
+                </div>
                 <h1>{{selected_post.title}}</h1>
+                {{format_date(selected_post.created_at)}}
                 <hr>
                 <div btf-markdown="selected_post.content">
                 </div>
@@ -16,5 +20,5 @@
                 </li>
             </ul>
         </div>
-	</div>
+    </div>
 </div>

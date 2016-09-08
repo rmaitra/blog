@@ -11,14 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140128224132) do
+ActiveRecord::Schema.define(version: 20160908021045) do
 
-  create_table "posts", force: true do |t|
-    t.string   "title"
+  create_table "posts", force: :cascade do |t|
+    t.string   "title",       limit: 255
     t.text     "content"
-    t.string   "type"
+    t.string   "type",        limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "type_id"
+    t.integer  "sub_type_id"
+  end
+
+  create_table "types", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "parent"
   end
 
 end

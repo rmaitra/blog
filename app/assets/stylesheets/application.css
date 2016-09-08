@@ -25,6 +25,10 @@ body, html{
   line-height: 1.5;
 }
 
+.jumbotron{
+  background-color:#fff !important;
+}
+
 .fontg1{
   font-family: "VT323";
 }
