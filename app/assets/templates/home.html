@@ -17,6 +17,8 @@
             </div>
             <h3><a ng-href="/posts/?id={{post.id}}">{{post.title}}</a></h3>
             <div>{{format_date(post.created_at)}}</div>
+            <div btf-markdown="post.content.substring(0,200)">
+            </div>
         </div>
     </div>
 </div>
